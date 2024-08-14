@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="images">
+            <div class="image">
+                <h2>Original Image</h2>
+                <img src="{{ original }}" alt="original image">
+            </div>
+            <div class="image">
+                <h2>Uploaded Image</h2>
+                <img src="{{ uploaded }}" alt="uploaded image">
+            </div>
+        </div>
+
+        <div class="images">
+            <div class="image">
+                <h2>Original Image with contours</h2>
+                <img src="{{ output }}" alt="original image with contours">
+            </div>
+            <div class="image">
+                <h2>Uploaded Image with contours</h2>
+                <img src="{{ output2 }}" alt="uploaded image with contours">
+            </div>
+        </div>
+
+        <div class="result">
+            <h2>Result</h2>
+            <p>{{ result }}</p>
+            <p>SSIM Score: {{ score }}</p>
+        </div>
+
+        <a href="{{ url_for('main.index') }}" class="upload-button">Upload another image</a>
+    </div>
+</body>
+</html>
