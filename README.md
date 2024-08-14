@@ -1,11 +1,14 @@
 # PAN card tempering detection
 
+[to see the app in live press here](https://pan-card-tampering-detection-e0dbf45b835c.herokuapp.com/)
 ## Overview
 
 PAN (Permanent Account Number) card detection is a process that involves identifying and verifying PAN cards, which are issued by the Income Tax Department of India. PAN cards are used as a universal identification key for all financial transactions and have significant importance in tax-related processes.
 
 In this project, we will detect tempering of pan card using computer vision. this project will help the different organization in detecting whether the id (the pan card) provided to them by their employees or customers or anyone is original or not.
 
+![](.readmeimages/1.png)
+![](.readmeimages/2.png)
 ## Steps for PAN Card Tempering Detection
 
 ### 1. **Get the Images from the User**
@@ -47,3 +50,10 @@ Compare the similarity scores of all images and generate a report indicating whe
 ### 10. **Output the Final Tampering Detection Result**
 
 Present the final result to the user, including the similarity score and annotated images. This delivers a user-friendly output that highlights potential tampering areas and provides a definitive conclusion.
+
+
+## Deployment on heroku 
+
+here is the link of the application: 
+
+[heroku-deployment](https://pan-card-tampering-detection-e0dbf45b835c.herokuapp.com)
