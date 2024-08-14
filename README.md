@@ -1,16 +1,16 @@
-# CIN card tempering detection
+# PAN card tempering detection
 
 ## Overview
 
-CIN (Carte d'Identité Nationale) Tempering Detection in Morocco refers to the process of identifying and preventing the manipulation or forgery of National Identification Cards. The CIN is a crucial document for Moroccan citizens, used for identification in various official and financial transactions, making it a target for tampering or fraudulent activities.
+PAN (Permanent Account Number) card detection is a process that involves identifying and verifying PAN cards, which are issued by the Income Tax Department of India. PAN cards are used as a universal identification key for all financial transactions and have significant importance in tax-related processes.
 
 In this project, we will detect tempering of pan card using computer vision. this project will help the different organization in detecting whether the id (the pan card) provided to them by their employees or customers or anyone is original or not.
 
-## Steps for CIN Card Tempering Detection
+## Steps for PAN Card Tempering Detection
 
 ### 1. **Get the Images from the User**
 
-Prompt the user to upload the suspected tampered image along with the original CIN card image. This is the starting point, where the user provides the necessary input for the detection process.
+Prompt the user to upload the suspected tampered image along with the original pan card image. This is the starting point, where the user provides the necessary input for the detection process.
 
 ### 2. **Read and Validate the Image**
 
