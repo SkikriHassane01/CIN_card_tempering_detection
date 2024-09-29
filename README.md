@@ -57,3 +57,13 @@ Present the final result to the user, including the similarity score and annotat
 here is the link of the application: 
 
 [heroku-deployment](https://pan-card-tampering-detection-e0dbf45b835c.herokuapp.com)
+
+
+### note: if you want to deploy on heroku you need to add the heroku-buildpakc-apt and ann libgl1 to the Aptfile
+
+```bash
+heroku buildpacks:add --index 1 heroku-community/apt --app appname
+
+libgl1
+
+```

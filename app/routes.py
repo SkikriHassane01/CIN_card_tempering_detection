@@ -48,6 +48,9 @@ def process_file(filepath,filename):
     if original is None or uploaded is None:
         return "Error loading images."
 
+    # Resize the uploaded image to match the original image dimensions
+    uploaded_resized = cv2.resize(uploaded, (original.shape[1], original.shape[0]))
+    
     # convert the images to grayscale 
     original_gray = cv2.cvtColor(original, cv2.COLOR_BGR2GRAY)
     uploaded_gray = cv2.cvtColor(uploaded, cv2.COLOR_BGR2GRAY)
@@ -84,7 +87,7 @@ def process_file(filepath,filename):
 
     # Save the output images
     cv2.imwrite(original_output_path, original)
-    cv2.imwrite(uploaded_output_path, uploaded)
+    cv2.imwrite(uploaded_output_path, uploaded_resized)
 
     # Render the result template with images
     return render_template('result.html', 
