@@ -53,7 +53,7 @@ def process_file(filepath,filename):
     
     # convert the images to grayscale 
     original_gray = cv2.cvtColor(original, cv2.COLOR_BGR2GRAY)
-    uploaded_gray = cv2.cvtColor(uploaded, cv2.COLOR_BGR2GRAY)
+    uploaded_gray = cv2.cvtColor(uploaded_resized, cv2.COLOR_BGR2GRAY)
 
     # compute the structural similarity index 
     (score, diff) = ssim(original_gray, uploaded_gray, full=True)
