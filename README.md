@@ -1,6 +1,6 @@
 # PAN card tempering detection
 
-[to see the app in live press here](https://pan-card-tampering-detection-e0dbf45b835c.herokuapp.com/)
+[to see the app in live press here](https://pan-card-tampering-detection-107600ec5681.herokuapp.com/)
 ## Overview
 
 PAN (Permanent Account Number) card detection is a process that involves identifying and verifying PAN cards, which are issued by the Income Tax Department of India. PAN cards are used as a universal identification key for all financial transactions and have significant importance in tax-related processes.
